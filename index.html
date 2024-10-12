@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Mishra - Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: #fff;
+    padding: 60px 0; /* More padding for a larger header */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: fadeIn 1s; /* Fade-in animation */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger font size for the title */
+    margin: 0;
+    animation: slideIn 0.5s ease forwards; /* Slide-in animation */
+}
+
+header p {
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards 0.5s; /* Fade-in with delay */
+}
+
+header p a {
+    color: #ffdd57; /* Bright color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Transition for link color */
+}
+
+header p a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+.resume-button {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; /* Transition effects */
+    font-weight: bold; /* Make button text bold */
+}
+
+.resume-button:hover {
+    background: #ff4500; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly scale the button */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+        /* Typing effect */
+        .typing-effect {
+            display: inline;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #fff;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 0;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        section.active {
+            opacity: 1;
+        }
+
+        /* Skills List */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .skills-list img {
+            margin-right: 10px;
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <h1><span id="name" class="typing-effect"></span></h1>
+            <p>Email: <a href="mailto:gaurav.jss.au@gmail.com">gaurav.jss.au@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/gaurav-mishra-52927b200/" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/gmkvs00" target="_blank">GitHub</a> | +917459074155
+            </p>
+            <a href="assets/resume/resume.pdf" class="resume-button" download>Download Resume</a>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am committed to continuous learning and improvement, actively seeking opportunities to expand my knowledge and contribute to collaborative environments. My goal is to leverage my skills and experience to drive technological advancements and deliver impactful solutions.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Master of Computer Application (MCA)</strong> - JSS Academy of Technical Education (2022 - 2024) - 7.4/10</li>
+                <li><strong>Bachelor of Computer Applications (BCA)</strong> - University of Allahabad (2019 - 2022) - 83%</li>
+                <li><strong>12th</strong> - Kendriya Vidyalaya, New Cantt, Allahabad - 72%</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Navodita Infotech</strong> - C++ Programming Intern (Jan 2024 – March 2024)
+                    <ul>
+                        <li>Developed a Data Structures and Algorithms Visualizer in C++.</li>
+                        <li>Enabled real-time interaction with users.</li>
+                        <li>Designed and implemented a user-friendly interface.</li>
+                    </ul>
+                </li>
+                <li><strong>Martvally IT Services</strong> - Software Developer Intern (Sep 2024 - Present)
+                    <ul>
+                        <li>Developed and optimized front-end web applications using React.js and JavaScript.</li>
+                        <li>Worked closely with the backend team to integrate APIs using Node.js and Express.js.</li>
+                        <li>Collaborated in an Agile environment to deliver high-quality software solutions.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>E-Learning Platform</strong>
+                    <ul>
+                        <li>Developed a platform using Django for course management and user engagement.</li>
+                        <li>Implemented data visualization tools using Chart.js.</li>
+                        <li>Created a responsive interface using Bootstrap and JQuery.</li>
+                    </ul>
+                </li>
+                <li><strong>Expense Tracker</strong>
+                    <ul>
+                        <li>Developed an expense tracking application using the MERN stack.</li>
+                        <li>Implemented user authentication and CRUD operations.</li>
+                        <li>Used Chart.js for visualizing expenses.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" width="30" height="30"> C++
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo" width="30" height="30"> C
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" width="30" height="30"> Python
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Logo" width="30" height="30"> Linux
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" width="30" height="30"> Node.js
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js Logo" width="30" height="30"> Express.js
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js Logo" width="30" height="30"> React.js
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" width="30" height="30"> HTML
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" width="30" height="30"> CSS
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git Logo" width="30" height="30"> Git
+                </li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="MySQL Logo" width="30" height="30"> MySQL
+                </li>
+                
+            </ul>
+            <p>Technical Concepts: Data Structures, OOP, OS, Computer Networks, DBMS.</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Awarded a 2-year National Service Scheme (NSS) certificate for active participation.</li>
+                <li>Successfully organized multiple NSS camps during my graduation.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Gaurav Mishra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top">↑</button>
+
+    <script>
+        // Typing effect for the name
+        const nameElement = document.getElementById('name');
+        const nameText = "Gaurav Mishra";
+        let index = 0;
+
+        function type() {
+            if (index < nameText.length) {
+                nameElement.textContent += nameText.charAt(index);
+                index++;
+                setTimeout(type, 100);
+            }
+        }
+
+        // Start the typing effect
+        window.onload = type;
+
+        // Scroll animation for sections
+        const sections = document.querySelectorAll('section');
+
+        function checkScroll() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+
+                if (sectionTop < screenHeight - 150) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkScroll);
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+</body>
+</html>
